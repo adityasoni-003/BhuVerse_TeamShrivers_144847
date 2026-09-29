@@ -20,14 +20,15 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS
+# CORS (Supports Vercel, Render, Netlify & Localhost)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # For development
+    allow_origin_regex=r"https?://.*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Serve uploaded field images
 app.mount("/uploads", StaticFiles(directory="demo_data/uploads"), name="uploads")
