@@ -4,7 +4,7 @@ import { getAnalyses } from '../services/api';
 import Layout from '../components/Layout';
 import { Camera, PlusCircle, MapPin, Search } from 'lucide-react';
 
-const BACKEND_URL = 'http://localhost:8000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
 export default function FieldObservations() {
   const [analyses, setAnalyses] = useState([]);

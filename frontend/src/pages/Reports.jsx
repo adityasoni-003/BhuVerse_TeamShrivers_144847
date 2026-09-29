@@ -3,7 +3,7 @@ import { getAnalyses, getSpatialEvidence } from '../services/api';
 import Layout from '../components/Layout';
 import { FileText, Printer, Download, CheckCircle2, MapPin, Calendar, Satellite, Layers } from 'lucide-react';
 
-const BACKEND_URL = 'http://localhost:8000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
 export default function Reports() {
   const [analyses, setAnalyses] = useState([]);
