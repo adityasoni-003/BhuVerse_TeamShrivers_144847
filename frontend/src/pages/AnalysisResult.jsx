@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, Circle, Polygon, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { getSpatialEvidence } from '../services/api';
+import { getSpatialEvidence, BACKEND_URL } from '../services/api';
 import Layout from '../components/Layout';
 import { 
   ArrowLeft, 
@@ -24,9 +24,6 @@ import {
   ShieldCheck,
   Compass
 } from 'lucide-react';
-
-
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
