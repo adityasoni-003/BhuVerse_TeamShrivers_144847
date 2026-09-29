@@ -1,0 +1,49 @@
+# Dynamic User Uploads (keep directory structure, ignore user files)
+demo_data/uploads/*
+backend/demo_data/uploads/*
+!demo_data/uploads/.gitkeep
+!backend/demo_data/uploads/.gitkeep
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Node modules & build outputs
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+
+# Database & SQLite files
+*.db
+*.sqlite3
+backend/geodrishti.db
+backend/bhuverse.db
+
+# Test & Pytest caches
+.pytest_cache/
+backend/.pytest_cache/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+

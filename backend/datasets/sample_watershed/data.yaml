@@ -1,0 +1,8 @@
+path: C:\Users\Aditya\OneDrive\Desktop\Team_Shrivers_PS15_v2\backend\datasets\sample_watershed
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Farm Pond
+  1: Check Dam
+  2: Percolation Tank
