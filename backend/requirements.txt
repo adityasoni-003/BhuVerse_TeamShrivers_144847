@@ -9,3 +9,6 @@ pydantic-settings
 python-multipart
 Pillow
 exifread
+numpy
+requests
+piexif
