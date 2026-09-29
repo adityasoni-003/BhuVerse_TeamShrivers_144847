@@ -3,13 +3,18 @@ import json
 import logging
 from typing import Union, Optional, Dict
 from PIL import Image
-import numpy as np
-from ultralytics import YOLO
+try:
+    from ultralytics import YOLO
+    HAS_ULTRALYTICS = True
+except ImportError:
+    YOLO = None
+    HAS_ULTRALYTICS = False
 
 from app.analysis.models.base_model import BaseWatershedModel, WATERSHED_CLASSES, GENERIC_COCO_CLASSES, IncompatibleModelError
 from app.analysis.schemas.model_result import BoundingBox, ModelPrediction, ModelInferenceResult
 from app.training.metadata import ModelMetadata
 from datetime import datetime, timezone
+
 
 logger = logging.getLogger("bhuverse.real_model")
 
@@ -58,10 +63,14 @@ class RealWatershedModel(BaseWatershedModel):
                 logger.warning(f"Could not parse model metadata from {meta_path}: {e}")
 
     def _load_and_validate_weights(self):
+        if not HAS_ULTRALYTICS:
+            raise IncompatibleModelError("Ultralytics library is not installed in the environment. Falling back to Demo Model.")
+
         if not os.path.exists(self.weights_path):
             raise FileNotFoundError(f"Model weights file not found: {self.weights_path}")
 
         self.model = YOLO(self.weights_path)
+
 
         # If metadata was not present, extract class names directly from YOLO model.names
         if not self.class_names and hasattr(self.model, "names") and isinstance(self.model.names, dict):

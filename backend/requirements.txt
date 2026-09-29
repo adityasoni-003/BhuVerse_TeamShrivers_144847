@@ -12,3 +12,4 @@ exifread
 numpy
 requests
 piexif
+ultralytics
