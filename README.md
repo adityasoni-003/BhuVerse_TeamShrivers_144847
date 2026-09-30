@@ -46,11 +46,11 @@ Existing maps and monitoring systems can help describe the current condition of 
 
 BhuVerse provides an interactive GIS dashboard for watershed monitoring, field evidence analysis, and temporal change detection.
 
-![BhuVerse Dashboard](assets/Img1_UI_Dashboard.png)
-
-![Geo-Coded Image Analysis](assets/Img2_UI_Upload.png)
-
-![Temporal Change Detection](assets/Img3_UI_Change_Detector.png)
+<p align="center">
+  <img src="assets/Img1_UI_Dashboard.png" alt="BhuVerse Dashboard" width="30%">
+  <img src="assets/Img2_UI_Upload.png" alt="Geo-Coded Image Analysis" width="30%">
+  <img src="assets/Img3_UI_Change_Detector.png" alt="Temporal Change Detection" width="30%">
+</p>
 
 
 ---
@@ -437,13 +437,15 @@ The working BhuVerse prototype includes:
 https://bhu-verse-team-shrivers-144847.vercel.app/
 
 ### GitHub Repository
-[Add GitHub Repository Link]
+https://github.com/adityasoni-003/BhuVerse_TeamShrivers_144847
 
 ### Demonstration Video
-[Add YouTube Link]
+https://youtu.be/j2W4csML1Xw
+
 
 ### Detailed Project Report
-[Add Report Link]
+https://drive.google.com/file/d/1sZkWTcBUsrP_sh1XM4pcDxnxYia7xHd-/view?usp=drive_link
+
 
 
 # 17. Team Shrivers
