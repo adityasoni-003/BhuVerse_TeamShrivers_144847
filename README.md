@@ -41,15 +41,16 @@ Existing maps and monitoring systems can help describe the current condition of 
 **BhuVerse** addresses this gap by integrating geo-coded field evidence, satellite data and GIS-based analysis into a single watershed intelligence platform.
 
 ---
+
 ## Interface Preview
 
 BhuVerse provides an interactive GIS dashboard for watershed monitoring, field evidence analysis, and temporal change detection.
 
-![BhuVerse Dashboard](Img1_UI_Dashboard.png)
+![BhuVerse Dashboard](assets/Img1_UI_Dashboard.png)
 
-![Geo-Coded Image Analysis](Img2_UI_Upload.png)
+![Geo-Coded Image Analysis](assets/Img2_UI_Upload.png)
 
-![Temporal Change Detection](Img3_UI_Change_Detector.png)
+![Temporal Change Detection](assets/Img3_UI_Change_Detector.png)
 
 
 ---
